@@ -1,0 +1,55 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+<!-- REGISTRATION FORM -->
+<div class="container">
+    <div class="text-center" style="padding:50px 0">
+        <div class="logo">Registro</div>
+        <!-- Main Form -->
+        <div class="login-form-1">
+            <form id="register-form" class="text-left">
+                <div class="login-form-main-message"></div>
+                <div class="main-login-form">
+                    <div class="login-group">
+                        <div class="form-group">
+                            <label for="name" class="sr-only"></label>
+                            <input type="text" class="form-control" id="name" name="reg_username" placeholder="Nombres">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname" class="sr-only"></label>
+                            <input type="text" class="form-control" id="lastname" name="reg_username" placeholder="Apellidos">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="sr-only"></label>
+                            <input type="text" class="form-control" id="email" name="reg_email" placeholder="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="country" class="sr-only"></label>
+                            <input type="text" class="form-control" id="country" name="country" placeholder="Pais">
+                        </div>
+                        <div class="form-group">
+                            <label for="city" class="sr-only"></label>
+                            <input type="text" class="form-control" id="city" name="city" placeholder="Ciudad">
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="sr-only"></label>
+                            <input type="password" class="form-control" id="password" name="reg_password" placeholder="Contraseña">
+                        </div>
+                        <div class="form-group login-group-checkbox">
+                            <label for="anfitrion" class="sr-only">Que deseas ser?</label><br>
+                            <input type="radio" class="" name="anfitrion" id="anfitrion" placeholder="">
+                            <label for="anfitrion">Anfitrion</label>
+                            
+                            <input type="radio" class="" name="invitado" id="invitado" placeholder="">
+                            <label for="invitado">Invitado</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="login-button"><i class="fa fa-chevron-right"></i></button>
+                 </div>
+            </form>
+        </div>
+        <!-- end:Main Form -->
+    </div>
+</div>
+
+{% endblock %}
