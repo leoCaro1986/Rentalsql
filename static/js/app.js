@@ -63,19 +63,22 @@ function validasign_in(){
     if (!pattern.test(lastname)){
        alert('El campo apellido debe contener solo texto'); 
        return false;
+       //value email
     }
     if (!vemail.test(email)){
         alert('Verifique que el campo email sea correcto'); 
         return false;
      }
+     // value city
      if (!pattern.test(country)){
         alert('Verifique el campo Pais'); 
         return false;
      }
      if (!pattern.test(city)){
         alert('Verifique el campo Ciudad'); 
-        return false;
+        return false; 
      }
+     //Value password
      if (!vpassword.test(password)){
         alert('El campo password no tiene los caracteres requeridos'); 
         return false;
