@@ -13,5 +13,9 @@ def login():
 def sign_in():
     return render_template("sign_in.html")
 
+@app.route('/addProperty')
+def addProperty():
+    return render_template("addProperty.html")    
+
 if __name__ == '__main__':
     app.run(debug=True) #se genera el servidor

@@ -7,7 +7,7 @@
         <div class="logo">Registro</div>
         <!-- Main Form -->
         <div class="login-form-1">
-            <form id="register-form" class="text-left">
+            <form id="register-form" class="text-left" onsubmit="return validasign_in();">
                 <div class="login-form-main-message"></div>
                 <div class="main-login-form">
                     <div class="login-group">
@@ -36,13 +36,21 @@
                             <input type="password" class="form-control" id="password" name="reg_password" placeholder="Contraseña">
                         </div>
                         <div class="form-group login-group-checkbox">
-                            <label for="anfitrion" class="sr-only">Que deseas ser?</label><br>
-                            <input type="radio" class="" name="anfitrion" id="anfitrion" placeholder="">
-                            <label for="anfitrion">Anfitrion</label>
-                            
-                            <input type="radio" class="" name="invitado" id="invitado" placeholder="">
-                            <label for="invitado">Invitado</label>
+                            <label for="tipeCliente" class="sr-only">Que deseas ser?</label><br>
                         </div>
+
+                        <div class="form-check ">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="tipeCliente">
+                            <label class="form-check-label" for="tipeCliente">
+                              Anfitrion
+                            </label>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="tipeCliente2">
+                            <label class="form-check-label" for="tipeCliente2">
+                              Invitado
+                            </label>
+                          </div>
+
+
                     </div>
                     <button type="submit" class="login-button"><i class="fa fa-chevron-right"></i></button>
                  </div>
