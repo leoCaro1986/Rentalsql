@@ -1,6 +1,6 @@
 // validacion para el login
 
-
+//Validacion del login
 function validateLogin() {
     debugger;
     let username = document.getElementById("username").value;
@@ -33,6 +33,7 @@ function validateLogin() {
 
 }
 
+//Validacione del registro sign_in
 function validasign_in(){
     let name = document.getElementById("name").value;
     let lastname = document.getElementById("lastname").value;
@@ -83,10 +84,11 @@ function validasign_in(){
         alert('El campo password no tiene los caracteres requeridos'); 
         return false;
      }
-
-
-
 }
+
+
+//Validacion addProperty
+
 
 
 
