@@ -88,7 +88,38 @@ function validasign_in(){
 
 
 //Validacion addProperty
+function validaaddProperty(){
+   let cityP = document.getElementById(cityP).value;
+   let countryP = document.getElementById(countryPP).value;
+   let adressP = document.getElementById(adressP).value;
+   let ubication = document.getElementById(ubication).value;
+   let room_Number = document.getElementById(room_Number).value;
+   let image_P = document.getElementById(image_P).value;
+   let imageMain = document.getElementById(imageMain).value;
+   let valueDay = document.getElementById(valueDay).value;
+   let Description = document.getElementById(Description).value;
+   const pattern = new RegExp('^[A-Z]+$', 'i');
+   const number = new RegExp('^[0-9]+$', 'i');
 
+   if (!pattern.test(cityP)){
+      alert('El campo ciudad debe contener solo texto'); 
+      return false;
+   }
+   if (!pattern.test(countryP)){
+      alert('El campo país debe contener solo texto'); 
+      return false;
+   }
+   if (adressP.length == 0  || adressP== "") {
+      alert('Digite la dirección');
+      return false;
+   }
+   if (!number.test(room_Number)){
+      alert('numero de habitación no valido'); 
+      return false;
+   }
+
+
+}
 
 
 
