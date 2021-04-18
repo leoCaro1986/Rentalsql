@@ -148,10 +148,7 @@ debugger;
        alert('Debe diligenciar el numero de habitaciones');
        return false;
     } 
-   //  if (isNaN(room_Number)) {
-   //     alert('Digite solo números');
-   //     return false;
-   //  }
+   
     
     if (priceDay == 0 || priceDay == ""){
        alert('Digite Valor por noche');
