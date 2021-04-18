@@ -7,7 +7,7 @@
         <div class="logo">Agregue nueva propiedad</div>
         <!-- Main Form -->
         <div class="login-form-1">
-            <form id="register-form" class="text-left" onsubmit="return validaaddProperty();";>
+            <form id="register-form" class="text-left" method="POST" action = "{{url_for('property')}}"  onsubmit="return validaaddProperty();">
                 <div class="login-form-main-message"></div>
                 <div class="main-login-form">
                     <div class="login-group">
@@ -28,25 +28,24 @@
                             <input type="text" class="form-control" id="ubication" name="ubication" placeholder="Ubicación en Google Maps">
                         </div>
                         <div class="form-group">
-                            <label for="room_Number" class="sr-only"></label>
-                            <input type="number" class="form-control" id="room_Number" name="room_Number" placeholder="Numero de habitaciones">
+                            <label for="roomNumber" class="sr-only"></label>
+                            <input type="number" class="form-control" id="roomNumber" name="roomNumber" placeholder="Numero de habitaciones">
                         </div> <br>
                         <div class="form-group">
-                            <label for="image_P" class="sr-only">Cargue sus imagenes aquí</label>
-                            <input type="file" class="form-control" id="image_P" name="image_P" placeholder="Cargue sus imagenes aquí">
+                            <label for="imageP" class="sr-only">Cargue sus imagenes aquí</label>
+                            <input type="file" class="form-control" id="imageP" name="imageP" placeholder="Cargue sus imagenes aquí">
                         </div> <br>
                         <div class="form-group">
                             <label for="imageMain" class="sr-only">Cargue la imágen destacada</label>
                             <input type="file" class="form-control" id="imageMain" name="imageMain" placeholder="Cargue sus imagenes aquí">
                         </div> <br>
                         <div class="form-group">
-                            <label for="valueDay" class="sr-only"></label>
-                            <input type="text" class="form-control" id="valueDay" name="valueDay" placeholder="Valor por noche">
+                            <label for="priceDay" class="sr-only"></label>
+                            <input type="number" class="form-control" id="priceDay" name="priceDay" placeholder="Valor por noche">
                         </div> <br>
                         <div class="form-group">
-                            <label for="valueDay" class="sr-only">Ingrese la descripción de la propiedad</label>
-                            <textarea name="Description" id="Description" type="text" class="form-control" cols="30" rows="10">
-                            </textarea>
+                            <label for="Description" class="sr-only">Ingrese la descripción de la propiedad</label>
+                            <textarea name="Description" id="Description" type="text" class="form-control" cols="30" rows="10"></textarea>
                         </div>
                     </div>
                     <button type="submit" class="login-button"><i class="fa fa-chevron-right"></i></button>
