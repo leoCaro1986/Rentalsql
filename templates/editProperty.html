@@ -1,0 +1,40 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+<section>
+    <div class="container">
+        <div class="row mt-3">
+            {% for property in propertyp %}
+            <div class="col sm-4">
+                <div class="card" style="width: 18rem;">
+                   
+                    <img src="{{url_for('static', filename='img/casacampo.jpg')}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Decripción: </h5>
+                      <p class="card-text"></p>{{property[8]}}</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">{{property[1]}} - {{property[2]}}</li>
+                      <li class="list-group-item">{{property[3]}} - {{property[4]}}</li>
+                      <li class="list-group-item">Numero de habitaciones: {{property[5]}}</li>
+                      <li class="list-group-item"> Valor x noche: {{property[7]}}</li>
+                    </ul>
+                    <div class="card-body">
+                      <a href="/editP/{{property[0]}}" class="card-link">Editar</a>
+                      <a href="/deleteP/{{property[0]}}" class="card-link">Eliminar</a>
+                    </div>
+                    
+                  </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+{% endblock %}
