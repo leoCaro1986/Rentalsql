@@ -1,7 +1,7 @@
 /* Estilos del formulario login */
 @import url('https://fonts.googleapis.com/css?family=Numans');
 
-html,body{
+html{
 /* background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg'); */
 background-size: cover;
 background-repeat: no-repeat;
@@ -16,7 +16,8 @@ align-content: center;
 
 .card{
 height: 370px;
-margin-top: auto;
+padding: auto;
+margin: 50px 20px;
 margin-bottom: auto;
 width: 400px;
 background-color: rgba(0,0,0,0.5) !important;
@@ -91,7 +92,7 @@ margin-left: 4px;
 html,
 body {
   background: #efefef;
-  padding: 10px;
+  padding: 5px;
   font-family: 'Varela Round';
 }
 /*=== 2. Anchor Link ===*/
@@ -113,9 +114,10 @@ a:hover {
 }
 /*=== 4. Main Form ===*/
 .login-form-1 {
-    max-width: 500px;
+    width: 500px;
     border-radius: 5px;
     display: inline-block;
+   
   }
   .main-login-form {
     position: relative;
@@ -353,4 +355,9 @@ a:hover {
     font-size: 25px;
     color: #aaaaaa;
     font-weight: bold;
+  }
+
+
+  .listcard2 {
+    background-color:aqua;
   }

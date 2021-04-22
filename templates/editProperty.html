@@ -2,33 +2,35 @@
 {% block body %}
 
 <section>
-    <div class="container">
-        <div class="row mt-3">
-            {% for property in propertyp %}
-            <div class="col sm-4">
-                <div class="card" style="width: 18rem;">
-                   
-                    <img src="{{url_for('static', filename='img/casacampo.jpg')}}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Decripción: </h5>
-                      <p class="card-text"></p>{{property[8]}}</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">{{property[1]}} - {{property[2]}}</li>
-                      <li class="list-group-item">{{property[3]}} - {{property[4]}}</li>
-                      <li class="list-group-item">Numero de habitaciones: {{property[5]}}</li>
-                      <li class="list-group-item"> Valor x noche: {{property[7]}}</li>
-                    </ul>
-                    <div class="card-body">
-                      <a href="/editP/{{property[0]}}" class="card-link">Editar</a>
-                      <a href="/deleteP/{{property[0]}}" class="card-link">Eliminar</a>
-                    </div>
-                    
-                  </div>
+  <div class="container fluid mt-3 mb-3">
+    <div class="row mt-3">
+      {% for property in propertyp %}
+      <div class="col-12 col-md-4" >
+        <div class="card mt-2 border-light" id="card2"  style="width: 22rem; height:35rem ">
+          
+            <img src="{{url_for('static', filename='img/casacampo.jpg')}}" class="card-img-top" alt="...">
+            <div class="card-body bg-light ">
+              <h5 class="title">Decripción: </h5>
+              <p class="list-group">{{property[8]}}</p>
+              <ul class="card-text">
+                <li class="list-group ">{{property[1]}} - {{property[2]}}</li>
+                <li class="list-group">{{property[3]}} -Maps: {{property[4]}}</li>
+                <li class="list-group">Numero de habitaciones: {{property[5]}}</li>
+                <li class="list-group"> Valor x noche: {{property[7]}}</li>
+              </ul>
+              <div class="row m-0 text-center align-items-center justify-content-center">
+                <form class="form-inline" >
+                  <a href="/editP/{{property[0]}}" class="btn btn-primary ">Editar</a>
+                  <a href="/deleteP/{{property[0]}}" class="btn btn-danger">Eliminar</a>
+                </form>
+              </div>  
             </div>
-            {% endfor %}
+           
         </div>
+      </div>
+      {% endfor %} 
     </div>
+  </div>
 </section>
 
 
