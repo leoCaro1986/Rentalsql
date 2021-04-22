@@ -29,3 +29,9 @@ select
                                 <li><a class="dropdown-item" href="#">Invitado</a></li>
                             </ul>
                         </div>
+
+
+
+{{url_for('property')}}
+
+spellcheck="true"  etiqueta para autocorregir texto
